@@ -12,6 +12,6 @@
 </head>
 <body>
 <h2>Spring demo</h2>
-<a href="student/showForm">Student form</a>
+<a href="customer/showForm">Customer form</a>
 </body>
 </html>

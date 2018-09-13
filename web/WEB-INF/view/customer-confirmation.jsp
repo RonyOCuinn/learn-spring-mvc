@@ -7,12 +7,20 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
 <html>
 <head>
     <title>Customer Confirmation</title>
 </head>
 <body>
-    Customer confirmed: ${customer.firstName} ${customer.lastName}
+Customer confirmed: ${customer.firstName} ${customer.lastName}
+<br>
+Free Passes: ${customer.freePasses}
+<br>
+<br>
+Postal Code: ${customer.postCode}
+<br>
+<br>
+Course Code: ${customer.courseCode}
 </body>
 </html>

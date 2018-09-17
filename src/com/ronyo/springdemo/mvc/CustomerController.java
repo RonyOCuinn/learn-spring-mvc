@@ -1,4 +1,4 @@
-package com.rony.springdemo.mvc;
+package com.ronyo.springdemo.mvc;
 
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;

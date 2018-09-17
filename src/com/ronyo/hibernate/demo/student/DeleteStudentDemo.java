@@ -1,15 +1,12 @@
-package com.ronyo.hibernate.demo;
+package com.ronyo.hibernate.demo.student;
 
-import com.ronyo.hibernate.demo.entity.Student;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import java.util.List;
+public class DeleteStudentDemo {
 
-public class QueryStudentDemo {
-
-    public static void main(String[] args) {
+    public static void main(String[] args){
         SessionFactory sessionFactory = new Configuration()
                 .configure("hibernate.cfg.xml")
                 .addAnnotatedClass(Student.class)
@@ -20,11 +17,10 @@ public class QueryStudentDemo {
         try {
             session.beginTransaction();
 
-            List<Student> studentList = session.createQuery("from Student s where s.lastName='Horseman'", Student.class).getResultList();
+            Student student = session.get(Student.class, 10);
+            session.delete(student);
 
-            for(Student s : studentList){
-                System.out.println(s);
-            }
+            session.getTransaction().commit();
 
         } finally {
             sessionFactory.close();

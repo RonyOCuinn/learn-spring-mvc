@@ -1,4 +1,4 @@
-package com.rony.springdemo.mvc.validation;
+package com.ronyo.springdemo.mvc.validation;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;

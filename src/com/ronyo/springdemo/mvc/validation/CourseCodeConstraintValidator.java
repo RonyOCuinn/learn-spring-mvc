@@ -1,6 +1,4 @@
-package com.rony.springdemo.mvc.validation;
-
-import com.rony.springdemo.mvc.validation.CourseCode;
+package com.ronyo.springdemo.mvc.validation;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

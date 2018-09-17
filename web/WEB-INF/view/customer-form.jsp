@@ -15,7 +15,7 @@
     </style>
 </head>
 <body>
-    <%--@elvariable id="customer" type="com.rony.springdemo.mvc.Customer"--%>
+<%--@elvariable id="customer" type="com.ronyo.springdemo.mvc.Customer"--%>
     <form:form action="processForm" modelAttribute="customer">
         First name: <form:input path="firstName" />
         Last name: <form:input path="lastName" />

@@ -1,6 +1,6 @@
-package com.rony.springdemo.mvc;
+package com.ronyo.springdemo.mvc;
 
-import com.rony.springdemo.mvc.validation.CourseCode;
+import com.ronyo.springdemo.mvc.validation.CourseCode;
 
 import javax.validation.constraints.*;
 

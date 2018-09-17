@@ -1,4 +1,4 @@
-<%--@elvariable id="customer" type="com.rony.springdemo.mvc.Customer"--%>
+<%--@elvariable id="customer" type="com.ronyo.springdemo.mvc.Customer"--%>
 <%--
   Created by IntelliJ IDEA.
   User: ronyo

@@ -1,4 +1,4 @@
-package com.rony.springdemo.mvc;
+package com.ronyo.springdemo.mvc;
 
 import java.util.LinkedHashMap;
 

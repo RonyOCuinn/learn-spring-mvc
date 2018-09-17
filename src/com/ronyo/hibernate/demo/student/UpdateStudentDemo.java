@@ -1,11 +1,10 @@
-package com.ronyo.hibernate.demo;
+package com.ronyo.hibernate.demo.student;
 
-import com.ronyo.hibernate.demo.entity.Student;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class DeleteStudentDemo {
+public class UpdateStudentDemo {
 
     public static void main(String[] args){
         SessionFactory sessionFactory = new Configuration()
@@ -19,7 +18,7 @@ public class DeleteStudentDemo {
             session.beginTransaction();
 
             Student student = session.get(Student.class, 10);
-            session.delete(student);
+            student.setFirstName("Rony");
 
             session.getTransaction().commit();
 

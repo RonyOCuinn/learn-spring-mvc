@@ -1,4 +1,4 @@
-package com.rony.springdemo.mvc;
+package com.ronyo.springdemo.mvc;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

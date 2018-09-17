@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <%--@elvariable id="student" type="com.rony.springdemo.mvc.Student"--%>
+<%--@elvariable id="student" type="com.ronyo.springdemo.mvc.Student"--%>
     <form:form action="processForm" modelAttribute="student">
         First Name: <form:input path="firstName" />
         Last Name: <form:input path="lastName" />

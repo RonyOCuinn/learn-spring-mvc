@@ -1,4 +1,4 @@
-<jsp:useBean id="student" scope="request" type="com.rony.springdemo.mvc.Student"/>
+<jsp:useBean id="student" scope="request" type="com.ronyo.springdemo.mvc.Student"/>
 <%--
   Created by IntelliJ IDEA.
   User: ronyo

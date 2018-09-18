@@ -1,13 +1,13 @@
-package com.ronyo.hibernate.demo.instructor;
+package com.ronyo.hibernate.demo;
 
 import com.ronyo.hibernate.demo.course.Course;
-import com.ronyo.hibernate.demo.student.Student;
+import com.ronyo.hibernate.demo.instructor.Instructor;
+import com.ronyo.hibernate.demo.instructor.InstructorDetail;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class CreateInstructorDemo {
-
+public class EagerLazyDemo {
     public static void main(String[] args) {
         SessionFactory sessionFactory = new Configuration()
                 .configure("hibernate_one_to_many.cfg.xml")
@@ -19,22 +19,20 @@ public class CreateInstructorDemo {
         Session session = sessionFactory.getCurrentSession();
 
         try {
-            Instructor instructor = new Instructor("Ronan", "O Cuinn", "rocuinn@gmail.com");
-
-            InstructorDetail instructorDetail = new InstructorDetail("www.youtube.com/rony", "cans");
-
-            instructor.setInstructorDetail(instructorDetail);
-
             session.beginTransaction();
 
-            session.save(instructor);
+            Instructor instructor = session.get(Instructor.class, 1);
+
+            System.out.println(instructor);
 
             session.getTransaction().commit();
+            session.close();
+
+            System.out.println(instructor.getCourses());
 
         } finally {
             session.close();
             sessionFactory.close();
         }
     }
-
 }
